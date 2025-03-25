@@ -1,7 +1,14 @@
+import About from "./About";
+import { Card } from "./card";
+import Portfolio from "./Profile";
+import Skills from "./skills";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-600">
-      Hello world!
-    </h1>
+    <div>
+      <About />
+      <Skills/>
+      <Portfolio/>
+    </div>
   )
 }
