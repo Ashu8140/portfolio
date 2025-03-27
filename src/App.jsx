@@ -1,6 +1,8 @@
+
+
+
 import About from "./About";
-import { Card } from "./card";
-import Portfolio from "./Profile";
+import Portfolio from "./Portfolio";
 import Skills from "./skills";
 
 export default function App() {
@@ -12,3 +14,7 @@ export default function App() {
     </div>
   )
 }
+
+
+
+
