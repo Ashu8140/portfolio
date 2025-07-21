@@ -14,7 +14,6 @@ export default function Portfolio() {
       <h1 className="text-3xl font-bold text-center">My Project</h1>
       </div>
 
-      {/* Projects Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {projects.map((project, index) => (
           <Card key={index} className="shadow-lg rounded-lg bg-white hover:shadow-xl transition duration-300">
