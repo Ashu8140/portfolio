@@ -2,7 +2,9 @@
 
 
 import About from "./About";
+import Footer from "./footer";
 import Portfolio from "./Portfolio";
+import Hero from "./resume";
 import Skills from "./skills";
 
 export default function App() {
@@ -11,6 +13,7 @@ export default function App() {
       <About />
       <Skills/>
       <Portfolio/>
+      <Footer />
     </div>
   )
 }

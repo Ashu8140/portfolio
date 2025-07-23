@@ -1,35 +1,61 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ashu from './assets/ashu.jpg';
+import ashu from "./assets/ashu.jpg";
 
+function About() {
+  return (
+    <section id="about" className="py-12 bg-gray-100">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="bg-white rounded-2xl shadow-xl p-8 flex flex-col md:flex-row items-center md:items-start gap-8">
+          
+          <img
+            src={ashu}
+            alt="Ashu Saini"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-blue-500 shadow-md"
+          />
 
-function About(){
-    return(
-    <div>
-<section id="about" className="flex flex-col md:flex-row items-center justify-center text-center md:text-left my-12 p-8 bg-white shadow-lg rounded-lg">
-  <img 
-    src={ashu} 
-    alt="Ashu Saini" 
-    className="w-40 h-40 md:w-52 md:h-24 rounded-full shadow-md"
-  />
-  
-  <div className="md:ml-8 mt-6 md:mt-0">
-    <h2 className="text-3xl font-bold text-gray-800">About Me</h2>
-   <p>I'm Ashu, a web developer passionate about creating clean, responsive, and user-friendly websites. I enjoy working withs <span className="font-bold"> React, JavaScript, Typescript, Tailwind CSS and Redux </span> and I’m always eager to learn and grow as a developer.
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">Hi, I'm Ashu 👋</h2>
+            <p className="text-gray-600 text-base leading-relaxed">
+              A passionate <span className="font-semibold text-blue-600">Frontend Developer</span> with experience in
+              building responsive and interactive web apps using <span className="font-medium">React, TypeScript, Tailwind, and Redux</span>. 
+              I love crafting intuitive UI and learning new tech to enhance the user experience.
+            </p>
 
-</p>
+            <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start items-center">
+              <a
+                href="https://github.com/Ashu8140?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black text-2xl"
+                title="GitHub"
+              >
+                <FaGithub />
+              </a>
 
-    <div className="mt-4 flex gap-4 justify-center md:justify-start">
-      <a href="https://github.com/Ashu8140?tab=repositories" target="_blank" rel="noopener noreferrer">
-        <FaGithub className="text-2xl hover:text-gray-700 transition duration-200" />
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin className="text-2xl hover:text-blue-700 transition duration-200" />
-      </a>
-    </div>
-  </div>
-</section>
+              <a
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 text-2xl"
+                title="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
 
-    </div>
-    )
+              <a
+                href="/resume.docx"
+                download
+                className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+              >
+                Download Resume
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-export default About
+
+export default About;
